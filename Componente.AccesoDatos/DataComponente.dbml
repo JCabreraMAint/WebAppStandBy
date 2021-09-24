@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Standby" Class="DataComponenteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SVCG102;Initial Catalog=Standby;User ID=usrprueba" SettingsObjectName="Componente.AccesoDatos.Properties.Settings" SettingsPropertyName="StandbyConnectionString1" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.Login_Consulta" Method="Login_Consulta">
+    <ElementType Name="Login_ConsultaResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="Char(25) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Ingreso" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario_Ingreso" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_Actualiza" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Usuario_Actualiza" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
